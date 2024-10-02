@@ -210,12 +210,12 @@ public class Mainp {
         System.out.println("Half Adder - Sum: " + halfAdder.getSum());
         System.out.println("Half Adder - Carry: " + halfAdder.getCarry());
 
-        // Createed and added a full adder
+        // Created and added a full adder
         FullAdder fullAdder = new FullAdder(true, true, false);
         System.out.println("Full Adder - Sum: " + fullAdder.getSum());
         System.out.println("Full Adder - Carry Out: " + fullAdder.getCarryOut());
 
-        // Simulate the basic gates in the circuit
+        // Simulating the basic gates in the circuit
         circuit.simulate();
         
         // Below code is written to take user input//

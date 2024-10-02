@@ -186,7 +186,7 @@ public class Mainp {
         // Create a circuit
         Circuit circuit = new Circuit();
 
-        // Create gates with inputs
+        // Created gates with inputs
         LogicGate andGate = new AndGate(true, false);  // AND gate
         LogicGate orGate = new OrGate(true, false);    // OR gate
         LogicGate notGate = new NotGate(true);          // NOT gate
@@ -195,7 +195,7 @@ public class Mainp {
         LogicGate xorGate = new XorGate(true, false);   // XOR gate
         LogicGate xnorGate = new XnorGate(true, false);  // XNOR gate
 
-        // Add gates to the circuit
+        // Added gates to the circuit
         circuit.addGate(andGate);
         circuit.addGate(orGate);
         circuit.addGate(notGate);
@@ -205,19 +205,20 @@ public class Mainp {
         circuit.addGate(xnorGate);
 
 
-        // Create and add a half adder
+        // Created and added a half adder
         HalfAdder halfAdder = new HalfAdder(true, false);
         System.out.println("Half Adder - Sum: " + halfAdder.getSum());
         System.out.println("Half Adder - Carry: " + halfAdder.getCarry());
 
-        // Create and add a full adder
+        // Createed and added a full adder
         FullAdder fullAdder = new FullAdder(true, true, false);
         System.out.println("Full Adder - Sum: " + fullAdder.getSum());
         System.out.println("Full Adder - Carry Out: " + fullAdder.getCarryOut());
 
         // Simulate the basic gates in the circuit
         circuit.simulate();
-
+        
+        // Below code is written to take user input//
 
 
 //        Scanner scanner = new Scanner(System.in);
@@ -231,9 +232,9 @@ public class Mainp {
 //        LogicGate andGate = new AndGate(andInput1, andInput2);
 //        circuit.addGate(andGate);
 //
-//        // Repeat similar blocks for other gates (OR, NOT, NAND, NOR, XOR, XNOR)
+//        //Repeat similar blocks for other gates (OR, NOT, NAND, NOR, XOR, XNOR)
 //
-//        // User input for Half Adder
+//        // Taking User input for Half Adder
 //        System.out.println("Enter first input for Half Adder (true/false): ");
 //        boolean haInputA = scanner.nextBoolean();
 //        System.out.println("Enter second input for Half Adder (true/false): ");
@@ -242,7 +243,7 @@ public class Mainp {
 //        System.out.println("Half Adder - Sum: " + halfAdder.getSum());
 //        System.out.println("Half Adder - Carry: " + halfAdder.getCarry());
 //
-//        // User input for Full Adder
+//        // Taking User input for Full Adder
 //        System.out.println("Enter first input for Full Adder (true/false): ");
 //        boolean faInputA = scanner.nextBoolean();
 //        System.out.println("Enter second input for Full Adder (true/false): ");
@@ -253,10 +254,10 @@ public class Mainp {
 //        System.out.println("Full Adder - Sum: " + fullAdder.getSum());
 //        System.out.println("Full Adder - Carry Out: " + fullAdder.getCarryOut());
 //
-//        // Simulate the basic gates in the circuit
+//        // Simulating the basic gates in the circuit
 //        circuit.simulate();
 //
-//        // Close the scanner
+//        // Closing the scanner
 //        scanner.close();
     }
 }
